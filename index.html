@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <h1>Event are ClickBazi</h1>
+
+    <!-- inline oneclick -->
+    <button onclick="document.body.style.backgroundColor = 'yellow' ">
+        Click me : Yellow
+    </button>
+
+    <button onclick="alert(7)">
+        One click : to Alert
+    </button>
+
+    <button onclick="console.log('btn clicked')">
+        console something
+    </button>
+
+    <button onclick="makeRed()">
+        click me : red
+    </button>
+
+    <button id="makeItBlue">
+        Click me : blue
+    </button>
+
+
+    <!-- onClick by funtion -->
+    <script>
+       function makeRed() {
+        document.body.style.backgroundColor = ('red')
+       }
+    </script>
+
+    <script>
+        const blueButton = document.getElementById("makeItBlue");
+        blueButton.onclick = makeBlue
+
+        function makeBlue() {
+            document.body.style.backgroundColor = "blue";
+        }
+    </script>
+</body>
+</html>
